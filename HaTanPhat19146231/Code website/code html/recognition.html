@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tutorial</title>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            body{
+                background-color: rgb(5, 145, 145);
+            }
+            div{
+                background-color: green;
+                width: 40%;
+                border-radius: 30px;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                margin: auto;
+                margin-top: 10%;
+                background-color: rgb(31, 96, 96);
+                box-shadow: 5px 5px #848080;
+            }   
+            h1{
+                font-size: 50px;
+                color: white;
+            }
+            form{
+                text-align: center;
+            }
+            input{
+                margin: auto;
+                width: 500px;
+                text-align: center;
+                display: block;
+                font-size: 30px;
+                color: white;
+                font-weight: bold;
+                background-color: none;
+            }
+            p{
+                text-align: center;
+                font-weight: bold;
+                font-size: 30px;
+                color: white;
+            }
+            .button{
+                margin-top: 30px;
+                background-color: rgb(108, 104, 104);
+                width: 240px;
+                border-radius: 10px;
+            }
+            .button:hover{
+                background-color: rgb(219, 214, 214);
+                color: rgb(108, 104, 104);
+                transition: all 0.3s;
+            }   
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1 style="text-align:center" class="text-center">Nhận diện cá cảnh</h1>
+        <form action="/" id="img_form" method="post" enctype="multipart/form-data">
+            <input type="file" name="imagefile" >
+            <input class="button" type="submit" value="Dự đoán">
+        </form>
+        {%if prediction %}
+        <p> Hình ảnh là {{prediction}}</p>
+        {% endif %}
+        </div>
+        
+    </body>
+    <script>
+
+    </script>
+</html>
