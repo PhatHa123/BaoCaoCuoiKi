@@ -1,0 +1,3 @@
+1. Go to website: pizzahut.com.
+2. Choose a pizza.
+3. Order this pizza.
